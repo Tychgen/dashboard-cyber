@@ -1,0 +1,55 @@
+.tracking-section {
+    background-color: #263238;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    &:hover {
+      cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1600105/meat.cur),
+        auto;
+    }
+  }
+  
+  .trex {
+    position: relative;
+  
+    .trex-arm-front,
+    .trex-arm-back {
+      position: absolute;
+      transform-origin: 80% 20%;
+    }
+  
+    .trex-arm-back {
+      top: 110px;
+      left: 70px;
+    }
+  
+    .trex-arm-front {
+      top: 120px;
+      left: 80px;
+    }
+  
+    .trex-body .trex-eye {
+      position: relative;
+      top: 39px;
+      left: 60px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #e6e6e6;
+  
+      &:after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        top: 5px;
+        left: 1px;
+        border-radius: 50%;
+        background-color: #4d3019;
+      }
+    }
+  }
+  
